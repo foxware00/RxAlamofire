@@ -6,7 +6,7 @@ import RxCocoa
 import RxSwift
 import XCTest
 
-private struct Dummy {
+private enum Dummy {
   static let DataStringContent = "Hello World"
   static let DataStringData = DataStringContent.data(using: String.Encoding.utf8)!
   static let DataJSONContent = "{\"hello\":\"world\", \"foo\":\"bar\", \"zero\": 0}"
@@ -151,7 +151,7 @@ class RxAlamofireSpec: XCTestCase {
             testDownloadResponseExpectation.fulfill()
           }
         }
-        .subscribe {}
+        .subscribe(onDisposed: {})
 
       wait(for: [testDownloadResponseExpectation], timeout: 5)
     } catch {
@@ -179,7 +179,7 @@ class RxAlamofireSpec: XCTestCase {
             testDownloadResponseExpectation.fulfill()
           }
         }
-        .subscribe {}
+        .subscribe(onDisposed: {})
 
       wait(for: [testDownloadResponseExpectation], timeout: 5)
     } catch {

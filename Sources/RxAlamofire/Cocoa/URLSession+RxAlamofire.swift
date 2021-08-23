@@ -7,7 +7,7 @@
 
   // MARK: NSURLSession extensions
 
-  extension Reactive where Base: URLSession {
+  public extension Reactive where Base: URLSession {
     /**
      Creates an observable returning a decoded JSON object as `AnyObject`.
 
@@ -19,7 +19,7 @@
 
      - returns: An observable of a decoded JSON object as `AnyObject`
      */
-    public func json(_ method: Alamofire.HTTPMethod,
+    func json(_ method: Alamofire.HTTPMethod,
                      _ url: URLConvertible,
                      parameters: [String: Any]? = nil,
                      encoding: ParameterEncoding = URLEncoding.default,
@@ -47,7 +47,7 @@
 
      - returns: An observable of a tuple containing data and the request
      */
-    public func response(method: Alamofire.HTTPMethod,
+    func response(method: Alamofire.HTTPMethod,
                          _ url: URLConvertible,
                          parameters: [String: Any]? = nil,
                          encoding: ParameterEncoding = URLEncoding.default,
@@ -75,7 +75,7 @@
 
      - returns: An observable of a data
      */
-    public func data(_ method: Alamofire.HTTPMethod,
+    func data(_ method: Alamofire.HTTPMethod,
                      _ url: URLConvertible,
                      parameters: [String: AnyObject]? = nil,
                      encoding: ParameterEncoding = URLEncoding.default,

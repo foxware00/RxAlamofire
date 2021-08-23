@@ -169,18 +169,18 @@
 		33B7A786B80FB8C562B7EE5E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		3A47A735487C0376D921D659 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = "<group>"; };
 		3BDE5499DC3081B58EAE4C40 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
-		6B365935DDEE06324FC39C7D /* RxAlamofire watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxAlamofire watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B365935DDEE06324FC39C7D /* RxAlamofire watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxAlamofire watchOS.framework"; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7344131D11B109658CC96ACE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		760CB2E21D7F43071D30AB4E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		82EA652B6CB44E1E382BEFCB /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxRelay.framework; sourceTree = "<group>"; };
 		8DE459EC5874DC8FE73207BE /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
-		8FF0E111A2AA444531BBEF4E /* RxAlamofire iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxAlamofire iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF0E111A2AA444531BBEF4E /* RxAlamofire iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxAlamofire iOS.framework"; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931E1AD90E72F0C52CC19CF5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		9E0A5D782C3C6C8F03FFF815 /* RxAlamofire tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxAlamofire tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0A5D782C3C6C8F03FFF815 /* RxAlamofire tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxAlamofire tvOS.framework"; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC14EFA2053EE9C00B09986 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
 		A1F8EB0AB497650CFFB48E78 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		A667FFDF5C13F30D164EB313 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxRelay.framework; sourceTree = "<group>"; };
-		A959128E6F8E1C6D5C3C6F1D /* RxAlamofire macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "RxAlamofire macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A959128E6F8E1C6D5C3C6F1D /* RxAlamofire macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "RxAlamofire macOS.framework"; path = RxAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C28E9C152771D03E32AB42 /* RxAlamofireTests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxAlamofireTests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E84F67289218CC3886B08D /* RxAlamofireTests tvOS.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "RxAlamofireTests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C631BD0D115D1AD93F9D0D5E /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxTest.framework; sourceTree = "<group>"; };
@@ -535,8 +535,6 @@
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = RxSwiftCommunity;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = FE3A4B4109842298484A21D5 /* Build configuration list for PBXProject "RxAlamofire" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -818,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -979,6 +978,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
