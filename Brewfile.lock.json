@@ -1,0 +1,42 @@
+{
+  "entries": {
+    "brew": {
+      "xcodegen": {
+        "version": "2.24.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/xcodegen/blobs/sha256:a023f81e3ae8a34609749db824fe75fcd1c65b672a3e522737a65ecc801f964d",
+              "sha256": "a023f81e3ae8a34609749db824fe75fcd1c65b672a3e522737a65ecc801f964d"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/xcodegen/blobs/sha256:4c7f2072fc885ca10a439367749c87a46e93955cad6148f59d0a2e71e0f9ef86",
+              "sha256": "4c7f2072fc885ca10a439367749c87a46e93955cad6148f59d0a2e71e0f9ef86"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/xcodegen/blobs/sha256:dcd34d9054ff13b8eae754378c5f8f64a24c8bfb93630aa98384aa5867d39dca",
+              "sha256": "dcd34d9054ff13b8eae754378c5f8f64a24c8bfb93630aa98384aa5867d39dca"
+            }
+          }
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "big_sur": {
+        "HOMEBREW_VERSION": "3.2.9",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "05b8236bf4dd520b72b8edb188c5c96bf457697a",
+        "CLT": "12.5.0.22.9",
+        "Xcode": "12.5",
+        "macOS": "11.5.2"
+      }
+    }
+  }
+}
